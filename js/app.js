@@ -1,7 +1,8 @@
 
-
-var $searchBar = $("#search").keyup(search); //search input for name
-var $yearBar = $("#year").keyup(search) //search input for year
+//delete keyup comments to enable a live search instead of submit
+var $searchBar = $("#search")//.keyup(search); 		//search input for name
+var $yearBar = $("#year")//.keyup(search)				 //search input for year
+$('#submit').click(search);
 
 
 function clearInfoDiv(){ //Clears the more info div if there. 
@@ -19,6 +20,7 @@ function plotSearch(filmID) { //film plot search function
 
 
 function search () { //main search function
+	
 	var defaultAPI = "http://www.omdbapi.com/?" //basic URL for json request
 	var values = {
 		s : $searchBar.val(),
