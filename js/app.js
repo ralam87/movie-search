@@ -1,4 +1,4 @@
-
+var app = (function movieSearch() {
 //delete keyup comments to enable a live search instead of submit
 var $searchBar = $("#search")//.keyup(search); 		//search input for name
 var $yearBar = $("#year")//.keyup(search)				 //search input for year
@@ -148,4 +148,6 @@ $li.append($spanMT);
 $li.append($spanMY);
 $inner.append($li);
 
-} //end createBox
+		} //end createBox
+	
+}());
