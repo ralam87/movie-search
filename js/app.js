@@ -81,7 +81,9 @@ function printPlot (s2) { //second AJAX retrieval callback function for plot inf
 	$div_plot.append($plotSynopsis);
 	$div_plot.append($goToButtonLink);
 	
+	if (poster !== "N/A") {
 	var $poster = $('<img>', {src:  poster, class : "infoPoster"})
+	} 	
 	$div_holder.append($poster);
 	
 }; //end printPlot
